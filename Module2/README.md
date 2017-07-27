@@ -6,7 +6,7 @@
 4. Create a user account with the default "User" directory role called "Bill Gates"
 5. Create a group in Azure AD called "VM Admins"
 6. Add Bill Gates to the VM Admins group
-7. Use role based access control to give the VM Admins group explicit permissions to the "MyServers" resource group. Assign the "VM Contributor Role" to the "VM Admins" group
+7. Use role based access control to give the VM Admins group explicit permissions to the "MyServers" resource group. Assign the "VM Contributor Role" to the VM Admins group
 
 
 ### Notes:
