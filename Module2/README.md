@@ -1,7 +1,7 @@
 # Module 2 Lab - Azure AD Account Setup and Role Based Access Control
 
 1. Create a new global administrator account. Use it to sign into the Azure portal
-2. Create a new limited administrator account that has the ability to reset passwords. Do this while logged in as the global administrator your created in the last step
+2. Create a new limited administrator account that has the ability to reset passwords. Do this while logged in as the global administrator you created in the last step
 3. Create a new Azure virtual machine inside a resource group called "MyServers"
 4. Create a user account with the default "User" directory role called "Bill Gates"
 5. Create a group in Azure AD called "VM Admins"
