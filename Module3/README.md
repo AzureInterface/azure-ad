@@ -1,4 +1,4 @@
-# Module 3 Lab - Extending On-Premises Active Directory to Azure
+# Module 3 Lab - Build a Domain Controller on an Azure VM
 
 1. Deploy a Windows Server 2016 VM in the Azure portal
 2. Add a 100gb data disk to the VM, partition and format the disk in Windows
