@@ -19,8 +19,5 @@ Windows VM on Azure Architecture
 Create a Windows virtual machine with the Azure portal
 * https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal
 
-Understanding Role-Based Access Control
-* https://docs.microsoft.com/en-us/azure/active-directory/role-based-access-control-what-is
-
 Step-By-Step: Setting up Active Directory in Windows Server 2016
 * https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/
