@@ -2,7 +2,7 @@
 
 1. Create a new VM in the existing resource group with your DC
 2. Start PowerShell locally and login using Login-AzureRMAccount
-3. Use either the script in this repo (Join-AzureVmDomain.ps1) or the resource manager template below to join the VM to the domain.
+3. Use the script in this repo (Join-AzureVmDomain.ps1) to join the VM to the domain
 
 
 ### Notes:
