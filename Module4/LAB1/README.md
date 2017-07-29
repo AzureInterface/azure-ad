@@ -9,7 +9,7 @@ Here's an example of running the script : _New-LabUser.ps1 -count 50 -password P
 6. Optional: download and run IdFix to see if there are any issues with your users
 7. Install Azure AD Connect in custom mode and make sure you enable password sync, password write back, and SSO
 8. After initial syncronization, check the AAD portal to ensure your users are showing up
-9. Start a private browser session and sign in as one of your on-prem users to https://myapps.microsoft.com/
+9. Start a private browser session and sign in as one of your synced users to https://myapps.microsoft.com/
 
 
 ### Notes:
