@@ -3,7 +3,8 @@
 1. Power up your domain controller VM
 2. Create a group in AD called "Sales"
 3. Set the minimum password age in the Default Domain Policy to 0 (It's under \Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy)
-4. Run the New-LabUser.ps1 script in this repo to create a bunch of users. Use the -Password parameter when running the script so you know what the users passwords are. Make sure you make it complex enough to meet the default password policy requirements. Also make sure you set the -UpnSuffix parameter to your custom domain. Here's an example: _.\New-LabUser.ps1 -count 1 -password P@ssw0rd2016 -UpnSuffix pod1.azurepass.info_
+4. Run the New-LabUser.ps1 script in this repo to create a bunch of users. Use the -Password parameter when running the script so you know what the users passwords are. Make sure you make it complex enough to meet the default password policy requirements. Also make sure you set the -UpnSuffix parameter to your custom domain. 
+Here's an example of running the script : _.\New-LabUser.ps1 -count 50 -password P@ssw0rd2016 -UpnSuffix pod1.azurepass.info_
 5. Add some of the new users to the Sales group
 6. Optional: download and run IdFix to see if there are any issues with your users
 7. Install Azure AD Connect in custom mode and make sure you enable password sync, password write back, and SSO
