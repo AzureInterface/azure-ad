@@ -39,8 +39,8 @@ $userpwd = ConvertTo-SecureString -AsPlainText $password -Force
 
     New-ADUser -Name $name `
     -DisplayName $name `
-    -GivenName $lastname `
-    -Surname $firstname `
+    -GivenName $firstname `
+    -Surname $lastname `
     -Description $name `
     -Office 'Azure Lab' `
     -UserPrincipalName $upn `
@@ -56,15 +56,15 @@ $userpwd = ConvertTo-SecureString -AsPlainText $password -Force
 	
 <#
 	.SYNOPSIS
-		This function creates mailboxes intended for lab use.
+		This function creates AD users intended for lab use.
 
 	.DESCRIPTION
-		This function generates random user names for mailboxes using a CSV file.
+		This function generates random user names for AD users using a CSV file.
 		The CSV file used to provide the names contains 1000 unique, commonly used,
 		first and last names provided by the US Census Bureau.
 
 	.PARAMETER  Count
-		Specifies the number of mailboxes to create. The default value is 1.
+		Specifies the number of users to create. The default value is 1.
 
 	.PARAMETER  Password
 		The password for the Active Directory account. If not provided, a random
@@ -84,6 +84,6 @@ $userpwd = ConvertTo-SecureString -AsPlainText $password -Force
 		
 		Description
 		-----------
-		Creates 5 mailboxes using random user names.				
+		Creates 5 AD users using random user names.				
 
 #>
