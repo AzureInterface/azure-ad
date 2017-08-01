@@ -3,9 +3,10 @@ param(
 	[Parameter(Position=0, Mandatory=$false)]
 	[System.Int32]
 	$count = 1,
-
+	
 	[Parameter(Position=2, Mandatory=$true)]
-	[System.String],
+	[System.String]
+	$Password,
 
 	[Parameter(Position=3, Mandatory=$false)]
 	[System.String]
