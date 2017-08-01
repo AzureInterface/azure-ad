@@ -4,10 +4,8 @@ param(
 	[System.Int32]
 	$count = 1,
 
-	[Parameter(Position=2, Mandatory=$false)]
-	[System.String]
-	$password = [System.Web.Security.Membership]::GeneratePassword(10,2),
-		
+	[Parameter(Position=2, Mandatory=$true)]
+	[System.String],
 
 	[Parameter(Position=3, Mandatory=$false)]
 	[System.String]
@@ -19,7 +17,6 @@ param(
 )
 
 
-Add-Type -AssemblyName System.Web
 $webClient = New-Object System.Net.WebClient
 $user = $webClient.DownloadString('https://github.com/mikepfeiffer/ExchangeLab/raw/master/users.csv')
 $users = $user | ConvertFrom-Csv
@@ -67,8 +64,7 @@ $userpwd = ConvertTo-SecureString -AsPlainText $password -Force
 		Specifies the number of users to create. The default value is 1.
 
 	.PARAMETER  Password
-		The password for the Active Directory account. If not provided, a random
-		strong password will be generated automatically.
+		The password for the Active Directory account.
 
 		
 	.PARAMETER  UPNSuffix
@@ -80,7 +76,7 @@ $userpwd = ConvertTo-SecureString -AsPlainText $password -Force
 		the account will be created in the default users container.
 
 	.EXAMPLE
-		New-LabUser -Count 5
+		New-LabUser -Count 5 -Password P@ssw0rd2016
 		
 		Description
 		-----------
