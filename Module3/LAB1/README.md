@@ -5,7 +5,6 @@
 3. Statically set the VM IP address in the Azure portal
 4. Create a new AD forest and domain on the VM (store the NTDS database on the data disk)
 5. Modify the Azure virtual network DNS server settings to hand out the new domain controllers IP address
-6. Shut down and deallocate the VM when complete
 
 
 ### Notes:
