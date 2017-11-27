@@ -7,8 +7,8 @@
 5. Create a group in Azure AD called "VM Admins"
 6. Add Bill Gates to the VM Admins group
 7. Use role based access control to give the VM Admins group explicit permissions to the "MyServers" resource group. Assign the "VM Contributor Role" to the VM Admins group.
-8. Validate that Bill Gates can only perform basic management tasks on VMs in the MyServers resource group. Try to create a new resource group while signed in as Bill. Does it work?
-9. Delete the resource groups you created when you're done with this lab
+8. Sign into the portal as Bill Gates. Validate that Bill Gates can only perform basic management tasks on VMs in the MyServers resource group. Try to create a new resource group while signed in as Bill. Does it work?
+9. Delete the resource groups you created when you're done with this lab (you'll need to be signed in as a global admin)
 
 
 ### Notes:
