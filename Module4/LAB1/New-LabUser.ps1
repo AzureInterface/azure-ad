@@ -19,7 +19,7 @@ param(
 
 
 $webClient = New-Object System.Net.WebClient
-$user = $webClient.DownloadString('https://github.com/mikepfeiffer/ExchangeLab/raw/master/users.csv')
+$user = $webClient.DownloadString('https://raw.githubusercontent.com/mikepfeiffer/ExchangeLab/master/users.csv')
 $users = $user | ConvertFrom-Csv
 $userpwd = ConvertTo-SecureString -AsPlainText $password -Force
 
